@@ -3,12 +3,21 @@
 <h1>Users</h1>
 
 <div id="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
-  <% end %>
+  <table class="table">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">CPF</th>
+        <th scope="col">Celular</th>
+        <th scope="col">Email</th>
+        <th scope="col">Data de nascimento</th>
+      </tr>
+    <tbody>
+      <% @users.each do |user| %>
+        <%= render user %>
+      <% end %>
+    </tbody>
+  </table>
 </div>
 
 <%= link_to "New user", new_user_path %>

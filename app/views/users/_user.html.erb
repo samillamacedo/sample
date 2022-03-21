@@ -1,27 +1,7 @@
-<div id="<%= dom_id user %>">
-  <p>
-    <strong>Name:</strong>
-    <%= user.name %>
-  </p>
-
-  <p>
-    <strong>Phone:</strong>
-    <%= user.phone %>
-  </p>
-
-  <p>
-    <strong>Email:</strong>
-    <%= user.email %>
-  </p>
-
-  <p>
-    <strong>Cpf:</strong>
-    <%= user.cpf %>
-  </p>
-
-  <p>
-    <strong>Birthdate:</strong>
-    <%= user.birthdate %>
-  </p>
-
-</div>
+<tr id="<%= dom_id user %>">
+  <td><%= user.name %></td>
+  <td><%= user.cpf %></td>
+  <td><%= user.phone %></td>
+  <td><%= user.email %></td>
+  <td><%= user.birthdate %></td>
+</tr>
