@@ -1,6 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Users</h1>
+<div class="d-flex justify-content-between align-items-center">
+  <h1>Users</h1>
+  <%= link_to "New user", new_user_path, class: "btn btn-primary" %>
+</div>
 
 <div id="users">
   <table class="table">
@@ -11,6 +14,7 @@
         <th scope="col">Celular</th>
         <th scope="col">Email</th>
         <th scope="col">Data de nascimento</th>
+        <th scope="col"></th>
       </tr>
     <tbody>
       <% @users.each do |user| %>
@@ -19,5 +23,3 @@
     </tbody>
   </table>
 </div>
-
-<%= link_to "New user", new_user_path %>
