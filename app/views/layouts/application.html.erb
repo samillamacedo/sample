@@ -15,6 +15,9 @@
       <%= image_tag 'logo' %>
     </nav>
     <div class="container">
+      <% if notice.present? %>
+        <p class="alert alert-success" style="color: green"><%= notice %></p>
+      <% end %>
       <%= yield %>
     </div>
   </body>
